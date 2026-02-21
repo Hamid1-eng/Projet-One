@@ -22,6 +22,7 @@ header{
     top: 0;
     z-index: 1000;
     transition: all 0.3s ease;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
 
@@ -291,6 +292,7 @@ header:hover {
         transition: 0.3s;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         z-index: 999;
+        -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
     }
     
@@ -1153,7 +1155,7 @@ header:hover {
     
     .avis-text {
         font-size: 16px;
-        min-height: auto;
+        min-height: 0;
     }
     /* ---- SCROLL ANIMATIONS ---- */
 .scroll-hidden {
@@ -1452,6 +1454,10 @@ footer {
 .footer-bottom p {
     margin-bottom: 10px;
     font-size: 14px;
+}
+
+.heart-accent {
+    color: #d4691e;
 }
 
 /* Footer Responsive */
